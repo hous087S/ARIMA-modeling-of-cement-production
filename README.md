@@ -20,12 +20,6 @@ The approach emphasizes methodological rigor and interpretability, ensuring reli
 | Final Model              | ARIMA(7,1,0)                | Significant AR coefficients              | Captures short-term dynamics |
 | Forecasting              | 1–2 step ahead predictions  | Wider intervals over time                | Uncertainty increases with horizon |
 
----
-
-## Results
-- Produced short-term forecasts (T+1, T+2)  
-- Constructed confidence intervals showing increasing uncertainty over time  
-- Residuals are approximately Gaussian  
 
 ---
 
