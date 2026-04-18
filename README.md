@@ -7,18 +7,18 @@ The approach emphasizes methodological rigor and interpretability, ensuring reli
 
 ---
 
-## Key Steps
-- Tested stationarity using ADF and KPSS → series is I(1)  
-- Identified model orders via ACF/PACF  
-- Compared models using AIC/BIC  
-- Validated with Ljung–Box test and residual diagnostics  
+## Summary of Key Findings
 
----
-
-## Final Model
-**ARIMA(7,1,0)**  
-- Selected for strong residual diagnostics (no autocorrelation)  
-- Effectively captures short-term dependence  
+| Step                     | Method / Tool                | Key Result                              | Interpretation |
+|--------------------------|------------------------------|------------------------------------------|----------------|
+| Data Analysis            | Visual inspection            | Downward trend                           | Suggests non-stationarity |
+| Stationarity Testing     | ADF & KPSS                  | Non-stationary → I(1) after differencing | First differencing required |
+| Model Identification     | ACF / PACF                  | q ≈ 1, p up to 7                         | Candidate ARIMA models defined |
+| Model Selection          | AIC / BIC                   | AIC → (1,1,1), BIC → (7,1,0)             | Trade-off: fit vs parsimony |
+| Model Validation         | Ljung–Box test              | ARIMA(7,1,0) passes (no autocorrelation) | Preferred model |
+| Residual Analysis        | QQ-plot / distribution      | Approximately Gaussian                   | Model assumptions acceptable |
+| Final Model              | ARIMA(7,1,0)                | Significant AR coefficients              | Captures short-term dynamics |
+| Forecasting              | 1–2 step ahead predictions  | Wider intervals over time                | Uncertainty increases with horizon |
 
 ---
 
