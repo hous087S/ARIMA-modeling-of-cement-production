@@ -29,14 +29,6 @@ The approach emphasizes methodological rigor and interpretability, ensuring reli
 
 ---
 
-## Skills Demonstrated
-- Time series analysis  
-- ARIMA modeling & model selection  
-- Statistical testing & diagnostics  
-- Forecasting under uncertainty  
-
----
-
-## 👥 Authors
+## Authors
 - Houssem Bouabid  
 - Willy Lin  
